@@ -1,0 +1,155 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.left {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerIzaline {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.positionIzaline {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.positionIzaline p {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.ContainerCenterHeader {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: green; */
+}
+
+.positionCenterHeader {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: blue; */
+}
+
+.containerH1 {
+    width: 80%;
+    height: 40%;
+    /* background-color: yellow; */
+}
+
+.positionH1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    /* background-color: red; */
+}
+
+.positionH1 h1 {
+    /* font-size: clamp(25px, 4vw, 5em); */
+    font-size: 5em;
+    font-weight: 700;
+    letter-spacing: 5px;
+    /* ajouter un overflow au cas ou ? */
+}
+
+.containerH2 {
+    width: 80%;
+    height: 40%;
+    /* background-color: purple; */
+}
+
+.positionH2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+}
+
+.positionH2 h2 {
+    /* font-size: clamp(17px, 1vw, 1.5em); */
+    font-size: 1.5em;
+    font-weight: 100;
+    letter-spacing: 5px;
+    /* ajouter un overflow au cas ou ? */
+}
+
+strong {
+    color: #22C8DD;
+}
+
+nav {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    /* background-color: orange; */
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: black;
+}
+
+nav ul li a:hover {
+    /* ajouter une transition */
+    border-bottom: 3px solid #22C8DD;
+}
+
+.right {
+    width: 30%;
+    height: 100%;
+    background-color: black;
+}
+
+/* img {
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    top: 35%;
+    right: 13%;
+    background-color: red;
+} */
+
+img {
+    position: absolute;
+    width: 27%;
+    height: 450px;
+    top: 35%;
+    right: 13%;
+    /* background-color: red; */
+}
