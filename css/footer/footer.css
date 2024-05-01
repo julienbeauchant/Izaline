@@ -1,0 +1,89 @@
+footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-color: black;
+}
+
+/* sectionLeft permet de prendre la moitié gauche du footer  */
+.sectionLeft {
+    width: 50%;
+    height: 100%;
+    /* ce display flex sert a positionner le containerSectionRight a droite  */
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* containerSectionLeft permet de ne pas toucher les bords de l'écran à gauche */
+.containerSectionLeft {
+    width: 85%;
+    height: 100%;
+    /* background-color: orange; */
+}
+
+/* positionSectionLeft permet de couper de 30% containerSectionLeft pour facilité le positonnement des logo en space-between */
+.positionSectionLeft {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.positionSectionLeft a {
+    width: 35px;
+    aspect-ratio: 1/1;
+    /* background-color: yellow; */
+}
+
+/* permet aux img de prendre 100% de la place dans "a" */
+.positionSectionLeft a img {
+    width: 100%;
+    height: 100%;
+}
+
+/* sectionRight permet de prendre la moitié droite du footer  */
+.sectionRight {
+    width: 50%;
+    height: 100%;
+    /* ce display flex sert a positionner le containerSectionRight a gauche  */
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* containerSectionRight permet de ne pas toucher les bords de l'écran à droite */
+.containerSectionRight {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: green; */
+}
+
+.toggle {
+    width: 80px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.positionCercleToggle {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    /* background-color: orange; */
+}
+
+.cercleToggle {
+    width: 35%;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+    background-color: black;
+}

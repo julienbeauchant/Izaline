@@ -145,7 +145,7 @@ nav ul li a:hover {
     background-color: red;
 } */
 
-img {
+#robotHeader {
     position: absolute;
     width: 27%;
     height: 450px;

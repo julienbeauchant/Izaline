@@ -1,0 +1,85 @@
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px 0px 200px 0px;
+}
+
+.prestations {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.prestations p {
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.prestation {
+    width: 70%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+    border: 1px solid black;
+}
+
+#interactive {
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+}
+
+.insidePrestation {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerH4Vitrine,
+.containerH4Interactive,
+.containerH4Complete {
+    width: 50%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.containerPVitrine,
+.containerPInteractive,
+.containerPComplete {
+    width: 50%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.containerPVitrine p,
+.containerPInteractive p,
+.containerPComplete p {
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.insideVitrine,
+.insideInteractive,
+.insideComplete {
+    width: 50%;
+    height: 45%;
+    overflow: auto;
+}
+
+.insideVitrine p,
+.insideInteractive p,
+.insideComplete p {
+    font-size: 1.5em;
+    font-weight: 200;
+    letter-spacing: 2px;
+}

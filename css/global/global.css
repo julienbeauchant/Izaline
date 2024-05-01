@@ -18,3 +18,14 @@ body {
 span {
     color: #22C8DD;
 }
+
+h3 {
+    font-size: 4em;
+    color: #22C8DD;
+}
+
+h4 {
+    font-size: 3em;
+    color: #22C8DD;
+    letter-spacing: 5px;
+}
