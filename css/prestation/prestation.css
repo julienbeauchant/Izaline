@@ -1,4 +1,4 @@
-main {
+#mainPrestations {
     width: 100%;
     height: auto;
     display: flex;
@@ -7,24 +7,14 @@ main {
     margin: 200px 0px 200px 0px;
 }
 
-.prestations {
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-}
-
-.prestations p {
-    font-size: 1.5em;
-    font-weight: 300;
-    letter-spacing: 2px;
-}
-
 .prestation {
+    position: relative;
     width: 70%;
+    min-width: 450px;
     height: 500px;
     display: flex;
     justify-content: flex-end;
-    margin-top: 100px;
+    margin-top: 150px;
     border: 1px solid black;
 }
 
@@ -32,6 +22,7 @@ main {
     display: flex;
     justify-content: flex-start;
     background-color: black;
+    color: white;
 }
 
 .insidePrestation {
@@ -40,14 +31,28 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* background-color: red; */
+}
+
+#insidePrestationInteractive {
+    align-items: end;
+    text-align: end;
 }
 
 .containerH4Vitrine,
-.containerH4Interactive,
 .containerH4Complete {
     width: 50%;
     height: 20%;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.containerH4Interactive {
+    width: 50%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -82,4 +87,25 @@ main {
     font-size: 1.5em;
     font-weight: 200;
     letter-spacing: 2px;
+}
+
+
+
+
+#robotPrestationVitrine,
+#robotPrestationComplete {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: 50px;
+    right: 0;
+}
+
+#robotPrestationInteractive {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: 50px;
+    left: 0;
+    transform: scalex(-1);
 }

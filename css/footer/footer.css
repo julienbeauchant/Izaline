@@ -23,7 +23,7 @@ footer {
 
 /* positionSectionLeft permet de couper de 30% containerSectionLeft pour facilité le positonnement des logo en space-between */
 .positionSectionLeft {
-    width: 30%;
+    width: 200px;
     height: 100%;
     display: flex;
     justify-content: space-between;
