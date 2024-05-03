@@ -1,0 +1,28 @@
+#mainProjetPersonnel {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0px 0px 200px 0px;
+    /* background-color: red; */
+} 
+
+#ProjetPersonnel {
+    width: 38%;
+    /* background-color: aqua */
+}
+
+.carouselProjetPersonnel {
+    width: 55%;
+    height: 300px;
+    display: flex;
+    /* background-color: orange; */
+}
+
+.file {
+    width: 250px;
+    height: 100%;
+    margin-right: 20px;
+    background-color: black;
+}
