@@ -9,9 +9,9 @@
 
 .prestation {
     position: relative;
-    width: 75%;
+    width: 70%;
     min-width: 350px;
-    height: 500px;
+    height: 450px;
     display: flex;
     justify-content:  center;
     align-items: center;
@@ -113,7 +113,7 @@
     position: absolute;
     width: 25%;
     height: auto;
-    bottom: 50px;
+    bottom: 30px;
     right: 100px;
 }
 
@@ -121,7 +121,7 @@
     position: absolute;
     width: 25%;
     height: auto;
-    bottom: 50px;
+    bottom: 30px;
     left: 100px;
     transform: scalex(-1);
 }
