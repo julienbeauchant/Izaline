@@ -9,13 +9,20 @@
 
 .prestation {
     position: relative;
-    width: 70%;
-    min-width: 450px;
+    width: 75%;
+    min-width: 350px;
     height: 500px;
     display: flex;
-    justify-content: flex-end;
+    justify-content:  center;
+    align-items: center;
     margin-top: 150px;
     border: 1px solid black;
+}
+
+.positionPrestation {
+    width: 90%;
+    height: 95%;
+    display: flex;
 }
 
 #interactive {
@@ -26,12 +33,11 @@
 }
 
 .insidePrestation {
-    width: 95%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background-color: red; */
 }
 
 #insidePrestationInteractive {
@@ -39,9 +45,11 @@
     text-align: end;
 }
 
+/* ------------------------------------------------------ */
+
 .containerH4Vitrine,
 .containerH4Complete {
-    width: 50%;
+    width: 35%;
     height: 20%;
     display: flex;
     justify-content: flex-start;
@@ -49,21 +57,25 @@
 }
 
 .containerH4Interactive {
-    width: 50%;
+    width: 35%;
     height: 20%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
+/* ------------------------------------------------------ */
+
 .containerPVitrine,
 .containerPInteractive,
 .containerPComplete {
-    width: 50%;
+    width: 35%;
     height: 30%;
     display: flex;
     align-items: center;
 }
+
+/* ------------------------------------------------------ */
 
 .containerPVitrine p,
 .containerPInteractive p,
@@ -73,39 +85,51 @@
     letter-spacing: 2px;
 }
 
+/* ------------------------------------------------------ */
+
 .insideVitrine,
 .insideInteractive,
 .insideComplete {
-    width: 50%;
+    width: 35%;
     height: 45%;
-    overflow: auto;
 }
+
+/* ------------------------------------------------------ */
 
 .insideVitrine p,
 .insideInteractive p,
 .insideComplete p {
+    width: 100%;
+    height: 20%;
     font-size: 1.5em;
     font-weight: 200;
     letter-spacing: 2px;
 }
 
-
-
+/* ------------------------------------------------------ */
 
 #robotPrestationVitrine,
 #robotPrestationComplete {
     position: absolute;
-    width: 30%;
+    width: 25%;
     height: auto;
-    top: 50px;
-    right: 0;
+    bottom: 50px;
+    right: 100px;
 }
 
 #robotPrestationInteractive {
     position: absolute;
-    width: 30%;
+    width: 25%;
     height: auto;
-    top: 50px;
-    left: 0;
+    bottom: 50px;
+    left: 100px;
     transform: scalex(-1);
+}
+
+.insideVitrine ul,
+.insideInteractive ul,
+.insideComplete ul {
+    width: 100%;
+    height: 80%;
+    overflow: auto;
 }
