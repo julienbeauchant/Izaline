@@ -9,20 +9,21 @@
 
 .prestation {
     position: relative;
-    width: 70%;
+    width: 60%;
     min-width: 350px;
     height: 450px;
     display: flex;
-    justify-content:  center;
     align-items: center;
     margin-top: 150px;
     border: 1px solid black;
 }
 
-.positionPrestation {
-    width: 90%;
-    height: 95%;
+.positionPrestationLeft {
+    width: 50%;
+    height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #interactive {
@@ -33,11 +34,10 @@
 }
 
 .insidePrestation {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 #insidePrestationInteractive {
@@ -49,18 +49,10 @@
 
 .containerH4Vitrine,
 .containerH4Complete {
-    width: 35%;
-    height: 20%;
+    width: 100%;
+    height: 30%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.containerH4Interactive {
-    width: 35%;
-    height: 20%;
-    display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -69,10 +61,9 @@
 .containerPVitrine,
 .containerPInteractive,
 .containerPComplete {
-    width: 35%;
-    height: 30%;
+    width: 100%;
+    height: 60%;
     display: flex;
-    align-items: center;
 }
 
 /* ------------------------------------------------------ */
@@ -80,56 +71,167 @@
 .containerPVitrine p,
 .containerPInteractive p,
 .containerPComplete p {
-    font-size: 1em;
-    font-weight: 300;
-    letter-spacing: 2px;
+    font-size: 1.5em;
+    font-weight: 200;
 }
 
 /* ------------------------------------------------------ */
 
 .insideVitrine,
+.insideVitrine2,
 .insideInteractive,
 .insideComplete {
-    width: 35%;
-    height: 45%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerInsideVitrine,
+.containerInsideVitrine2 {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #22C8DD;
+}
+
+.positionInsideVitrine,
+.positionInsideVitrine2 {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* ------------------------------------------------------ */
 
-.insideVitrine p,
+.positionInsideVitrine p,
+.positionInsideVitrine2 p,
 .insideInteractive p,
 .insideComplete p {
     width: 100%;
     height: 20%;
+    display: flex;
+    align-items: center;
     font-size: 1.5em;
-    font-weight: 200;
-    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.insideInteractive p {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* ------------------------------------------------------ */
 
-#robotPrestationVitrine,
-#robotPrestationComplete {
+#robotPrestationVitrine {
     position: absolute;
-    width: 25%;
+    width: 60px;
     height: auto;
-    bottom: 30px;
-    right: 100px;
+    top: 5%;
+    left: 3%;
 }
 
-#robotPrestationInteractive {
+#robotPrestationInteractive,
+#robotPrestationComplete {
     position: absolute;
-    width: 25%;
+    width: 60px;
     height: auto;
-    bottom: 30px;
-    left: 100px;
-    transform: scalex(-1);
+    top: 5%;
+    left: 3%;
+    transform: scaleX(-1);
 }
 
 .insideVitrine ul,
+.insideVitrine2 ul,
 .insideInteractive ul,
 .insideComplete ul {
     width: 100%;
-    height: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 200;
     overflow: auto;
+}
+
+#interactive {
+    background-color: black;
+}
+
+.insideVitrine2 {
+    display: none;
+}
+
+@media screen and ( max-width: 1180px) {
+
+    .prestation {
+        position: relative;
+        width: 60%;
+        min-width: 350px;
+        height: 550px;
+        display: flex;
+        align-items: center;
+        margin-top: 150px;
+        border: 1px solid black;
+    }
+
+    .positionPrestationLeft {
+        width: 100%;
+    }
+
+    .insidePrestation {
+        width: 80%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: orange; */
+    }
+
+    .containerH4Vitrine,
+    .containerH4Complete {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: green; */
+    }
+    .containerPVitrine,
+    .containerPInteractive,
+    .containerPComplete {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        /* background-color: red; */
+    }
+    .insideVitrine {
+        display: none;
+    }
+    .insideVitrine2 {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: blue; */
+    }
+
+    .containerInsideVitrine2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #22C8DD;
+    }
 }

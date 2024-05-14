@@ -5,63 +5,62 @@ footer {
     background-color: black;
 }
 
-/* sectionLeft permet de prendre la moitié gauche du footer  */
-.sectionLeft {
+/* PARTIE GAUCHE DU FOOTER */
+
+/* moitié gauche du footer */
+#footerSectionLeft {
     width: 50%;
     height: 100%;
-    /* ce display flex sert a positionner le containerSectionRight a droite  */
     display: flex;
     justify-content: flex-end;
 }
 
-/* containerSectionLeft permet de ne pas toucher les bords de l'écran à gauche */
-.containerSectionLeft {
+.footerContainerSectionLeft {
     width: 85%;
     height: 100%;
-    /* background-color: orange; */
+    display: flex;
+    align-items: center;
 }
 
-/* positionSectionLeft permet de couper de 30% containerSectionLeft pour facilité le positonnement des logo en space-between */
-.positionSectionLeft {
-    width: 200px;
+/* espace de positionnement des icon reseaux sociaux */
+.containerFacebook,
+.containerIntagram,
+.containertiktok {
+    width: 15%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    /* background-color: red; */
 }
 
-.positionSectionLeft a {
-    width: 35px;
+/* icon reseaux sociaux */
+#facebook,
+#instagram,
+#tiktok {
+    width: 40px;
     aspect-ratio: 1/1;
-    /* background-color: yellow; */
 }
 
-/* permet aux img de prendre 100% de la place dans "a" */
-.positionSectionLeft a img {
-    width: 100%;
-    height: 100%;
-}
+/* PARTIE DROITE DU FOOTER */
 
-/* sectionRight permet de prendre la moitié droite du footer  */
-.sectionRight {
+/* moitié droite du footer */
+#footerSectionRight {
     width: 50%;
     height: 100%;
-    /* ce display flex sert a positionner le containerSectionRight a gauche  */
     display: flex;
     justify-content: flex-start;
 }
 
-/* containerSectionRight permet de ne pas toucher les bords de l'écran à droite */
-.containerSectionRight {
+.footerContainerSectionRight {
     width: 85%;
     height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* background-color: green; */
 }
 
+/* CREATON DU TOGGLE */
+
+/* forme du toggle */
 .toggle {
     width: 80px;
     height: 35px;
@@ -72,18 +71,34 @@ footer {
     background-color: white;
 }
 
+/* interrieur invisible permettant de séparer le cercle et les bords du toggle */
 .positionCercleToggle {
     width: 90%;
     height: 90%;
     display: flex;
     align-items: center;
     border-radius: 50px;
-    /* background-color: orange; */
 }
 
+/* cercle interactif du toggle */
 .cercleToggle {
     width: 35%;
     aspect-ratio: 1/1;
     border-radius: 100px;
     background-color: black;
+}
+
+/* espace de positionnement de l'icon user */
+.containerUser {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* icon pour l'admin amenant a un panneau de connexion */
+#user {
+    width: 40px;
+    aspect-ratio: 1/1;
 }

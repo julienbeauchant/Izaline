@@ -4,19 +4,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px 0px 200px 0px;
+    margin: 0px 0px 100px 0px;
 }
 
 .carouselProjetPersonnel {
-    width: 820px;
+    width: 100%;
     height: 300px;
+    margin-top: 100px;
     display: flex;
-    margin-top: 150px;
+    justify-content: flex-end;
 }
+
+/* .positionCarouselProjetPersonnel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+} */
 
 .file {
     width: 250px;
     height: 100%;
-    margin-right: 20px;
-    background-color: black;
+    margin-right: 30px;
+    box-shadow: -10px 10px 0px 0px #22C8DD;
+    border: 1px solid black;
 }
