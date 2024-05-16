@@ -8,7 +8,7 @@
     /* background-color: red; */
 }
 
-form {
+#formContact {
     width: clamp(350px, 30%, 700px);
     /* width: 30%; */
     /* min-width: 450px; */
@@ -60,6 +60,7 @@ details {
     letter-spacing: 2px;
     border: 1px solid black;
     border-radius: 0px;
+    caret-color: #22C8DD;
 
 }
 
