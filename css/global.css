@@ -64,17 +64,6 @@ strong {
     height: 100%;
 }
 
-@media screen and ( max-width: 580px) {
-
-    .titleSection p {
-        font-size: 15px;
-        font-weight: 300;
-        letter-spacing: 2px;
-    }
-}
-
-
-
 
 
 
