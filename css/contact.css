@@ -10,8 +10,6 @@
 
 #formContact {
     width: clamp(350px, 30%, 700px);
-    /* width: 30%; */
-    /* min-width: 450px; */
     height: 650px;
     margin-top: 150px;
     display: flex;
@@ -20,21 +18,21 @@
     align-items: center;
 }
 
-.nomPrenom {
+.identite {
     width: 100%;
     height: 10%;
     display: flex;
     justify-content: space-between;
 }
 
-#inputNom,
-#inputPrenom {
+#contactInputNom,
+#contactInputPrenom {
     width: 45%;
     height: 100%;
 }
 
-#inputTel,
-#inputEmail,
+#contactInputTel,
+#contactInputEmail,
 details {
     width: 100%;
     height: 10%;
@@ -47,7 +45,7 @@ summary {
     align-items: center;
 }
 
-#inputMessage {
+#contactInputMessage {
     width: 100%;
     height: 25%;
 }
@@ -64,7 +62,7 @@ details {
 
 }
 
-#inputBtn {
+#contactInputBtn {
     padding: 0;
     width: 30%;
     height: 7%;
@@ -80,4 +78,8 @@ details {
 
 ::placeholder {
     color: black;
+}
+
+#contactInputMessage {
+    padding-bottom: 70px;
 }

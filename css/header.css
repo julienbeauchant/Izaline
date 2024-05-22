@@ -1,7 +1,7 @@
 header {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
 }
 
@@ -48,6 +48,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background-color: green; */
 }
 
 .headerCenter {
@@ -55,6 +56,7 @@ header {
     height: 80%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .containerH1 {
@@ -63,6 +65,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    /* background-color: orange; */
 }
 
 .containerH2 {
@@ -71,6 +74,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    /* background-color: aqua; */
 }
 
 nav {
@@ -114,33 +118,27 @@ nav ul li a:hover {
 }
 
 
-@media screen and ( max-width: 1096px) {
-    .right {
+@media screen and ( max-width: 985px) {
+    #headerSectionRight {
+        position: relative;
         display: none;
     }
 
-    .left {
+    #headerSectionLeft {
         width: 100%;
-        /* background-color: red; */
     }
 
-    .containerIzaline {
+    #ContainerCenterHeader {
         width: 100%;
-        height: 15%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* background-color: yellow; */
-    }
-
-    .positionCenterHeader {
-        width: 80%;
-        height: 100%;
+        height: 85%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        /* background-color: purple; */
-        /* justify-content: space-between; */
+    }
+
+    nav {
+        display: none;
     }
 
     #robotHeader {
@@ -148,42 +146,87 @@ nav ul li a:hover {
     }
 
     #robotHeader2 {
-        display: flex;
         position: absolute;
+        display: flex;
         width: clamp(200px, 20%, 330px);
         height: auto;
-        top: 60%;
-        right: 23%;
+        top: 70%;
+        right: 36%;
+    }
+    
+    .headerCenter {
+        width: 70%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: red;
     }
 
     .containerH1 {
         width: 100%;
-        height: 25%;
+        height: 30%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        /* background-color: green; */
     }
-
+    
     .containerH2 {
         width: 100%;
         height: 30%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        /* background-color: orange; */
+        background-color: aqua;
     }
 
-    /* h1 {
-        font-size: 6vw;
+    h1 {
+        font-size: 7vw;
     }
 
     h2 {
-        font-size: 3.5vw;
-        font-weight: 200;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and ( max-width: 636px) {
+    .headerCenter {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: red;
     }
 
-    nav {
-        display: none;
-    } */
+    .containerH1 {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .containerH2 {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: aqua;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 2.8vw;
+    }
+}
+
+@media screen and ( max-width: 580px) {
+    h2 {
+        font-size: 2.3vw;
+    }
 }
