@@ -10,6 +10,8 @@
 body {
     width: 100vw;
     height: 100vh;
+    background-color: #F9F9F9;
+    color: #202020;
     background-repeat: no-repeat;
     font-family: "Advent Pro", sans-serif;
     font-optical-sizing: auto;
@@ -21,12 +23,12 @@ span {
 }
 
 h1 {
-    font-size: 5.5vw;
+    font-size: 5vw;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 2vw;
+    font-size: 1.8vw;
     /* font-size: 1.5em; */
     font-weight: 200;
 }

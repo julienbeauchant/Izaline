@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     align-items: center;
     margin-top: 150px;
-    border: 1px solid black;
+    border: 1px solid #202020;
 }
 
 .positionPrestationLeft {
@@ -30,8 +30,8 @@
 #interactive {
     display: flex;
     justify-content: flex-start;
-    background-color: black;
-    color: white;
+    background-color: #202020;
+    color: #F9F9F9;
 }
 
 .insidePrestation {
@@ -156,7 +156,7 @@
 }
 
 #interactive {
-    background-color: black;
+    background-color: #202020;
 }
 
 .insideVitrine2 {

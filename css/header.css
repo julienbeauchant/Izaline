@@ -13,7 +13,7 @@ header {
 #headerSectionRight {
     width: 35%;
     height: 100%;
-    background-color: black;
+    background-color: #202020;
 }
 
 /* LOGO IZALINE */
@@ -70,7 +70,7 @@ header {
 }
 
 .headerCenter {
-    width: 80%;
+    width: 70%;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -96,7 +96,7 @@ header {
 #nav {
     position: sticky;
     top: 0;
-    width: 80%;
+    width: 70%;
     height: 20%;
     display: flex;
     align-items: center;
@@ -113,7 +113,7 @@ header {
 #nav ul li a {
     font-size: 1.5vw;
     font-weight: 500;
-    color: black;
+    color: #202020;
     transition: transform 0.3s ease;
 }
 
