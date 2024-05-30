@@ -1,0 +1,21 @@
+#retourHaut {
+    position: fixed;
+    bottom: 30%;
+    right: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-color: #22C8DD;
+    transition: 1s;
+}
+
+#retourHaut img{
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+#retourHaut:hover {
+    transform: rotate(360deg);
+}

@@ -1,65 +1,3 @@
-footer {
-    width: 100%;
-    height: 150px;
-    display: flex;
-    background-color: #202020;
-}
-
-/* PARTIE GAUCHE DU FOOTER */
-
-/* moitié gauche du footer */
-#footerSectionLeft {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.footerContainerSectionLeft {
-    width: 85%;
-    height: 100%;
-    gap: 7%;
-    display: flex;
-    align-items: center;
-}
-
-/* espace de positionnement des icon reseaux sociaux */
-.containerFacebook,
-.containerIntagram,
-.containertiktok {
-    width: clamp(25px, 6%, 40px);
-    aspect-ratio: 1/1;
-    display: flex;
-    align-items: center;
-}
-
-/* icon reseaux sociaux */
-#facebook,
-#instagram,
-#tiktok {
-    width: 100%;
-    height: 100%;
-}
-
-/* PARTIE DROITE DU FOOTER */
-
-/* moitié droite du footer */
-#footerSectionRight {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.footerContainerSectionRight {
-    width: 85%;
-    height: 100%;
-    gap: 7%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 /* CREATON DU TOGGLE */
 
 /* forme du toggle */
@@ -71,6 +9,7 @@ footer {
     align-items: center;
     border-radius: 50px;
     background-color: #F9F9F9;
+    cursor: pointer;
 }
 
 /* interrieur invisible permettant de séparer le cercle et les bords du toggle */
@@ -90,20 +29,8 @@ footer {
     background-color: #202020;
 }
 
-/* espace de positionnement de l'icon user */
-.containerUser {
-    width: clamp(25px, 6%, 40px);
-    aspect-ratio: 1/1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-/* icon pour l'admin amenant a un panneau de connexion */
-#user {
-    width: 100%;
-    height: 100%;
-}
+/* DARK-MODE */
 
 body.dark-mode {
     background-color: #202020;
@@ -145,15 +72,26 @@ body.dark-mode {
     background-color: #F9F9F9;
 }
 
-.dark-mode details,
+.dark-mode select,
 .dark-mode #contactInputBtn {
     background-color: #F9F9F9;
     color: #202020;
 }
 
 .dark-mode input {
+    color: #F9F9F9;
     border: 1px solid #F9F9F9;
     background-color: #202020;
+}
+
+.dark-mode textarea {
+    color: #F9F9F9;
+    border: 1px solid #F9F9F9;
+    background-color: #202020;
+}
+
+.dark-mode a {
+    color: #F9F9F9;
 }
 
 .dark-mode ::placeholder {

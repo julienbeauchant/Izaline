@@ -4,89 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/izaline.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/prestation.css">
-    <link rel="stylesheet" href="css/projet-personnel.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/mediaqueries/mediaqueries-admin.css">
-    <link rel="stylesheet" href="css/mediaqueries/mediaqueries-contact.css">
-    <link rel="stylesheet" href="css/mediaqueries/mediaqueries-footer.css">
-    <link rel="stylesheet" href="css/mediaqueries/mediaqueries-global.css">
-    <link rel="stylesheet" href="css/mediaqueries/mediaqueries-header.css">
-    <link rel="stylesheet" href="css/mediaqueries/mediaqueries-prestation.css">
-    <link rel="stylesheet" href="css/mediaqueries/mediaqueries-projet-personnel.css">
+    <link rel="stylesheet" href="../css/prestation.css">
+    <link rel="stylesheet" href="../css/global.css">
+
+    <link rel="stylesheet" href="../css/mediaqueries/mediaqueries-prestation.css">
+    <link rel="stylesheet" href="../css/mediaqueries/mediaqueries-global.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <title>izaline</title>
+    <title>prestation</title>
 </head>
 
 <body>
-
-    <header>
-
-        <section id="headerSectionLeft">
-            <div class="containerLogoIzaline">
-                <div class="positionLogoIzaline">
-                    <p>Izaline Dhalluin</p>
-                </div>
-                <nav id="navBurger">
-                    <div class="containerImgBurger">
-                        <img id="burger" src="img/logo-n/menu-n.png" alt="">
-                    </div>
-                    <ul>
-                        <li><a href="#mainPrestations">Prestations</a></li>
-                        <li><a href="#mainProjetPersonnel">Projets personnels</a></li>
-                        <li><a href="#mainContact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <section id="ContainerCenterHeader">
-                <div class="headerCenter">
-                    <div class="containerH1">
-                        <h1>
-                            Un projet de <span>site web</span>
-                            <br>
-                            et d'<span>application web</span> ?
-                        </h1>
-                    </div>
-                    <div class="containerH2">
-                        <h2>
-                            Je suis Izaline Dhalluin,<wbr>
-                                développeurse web et web mobile.
-                            <br>
-                            <br>
-                            Je serais ravie de vous accompagner dans
-                            l'accomplissement de votre projet alors,
-                            <strong>COLLABORONS</strong> !
-                        </h2>
-                    </div>
-                </div>
-                <nav id="nav">
-                    <ul>
-                        <li><a href="#mainPrestations">Prestations</a></li>
-                        <li><a href="#mainProjetPersonnel">Projets personnels</a></li>
-                        <li><a href="#mainContact">Contact</a></li>
-                    </ul>
-                </nav>
-            </section>
-
-        </section>
-
-        <section id="headerSectionRight"></section>
-
-        <img id="robotHeader" src="../../img/robot-assistant/friendly-robot-assistant.svg" alt="">
-        <img id="robotHeader2" src="/img/robot-assistant/happy-robot-assistant.svg" alt="">
-    </header>
-
-    <main id="mainPrestations">
+    
+<main id="mainPrestations">
 
         <div id="prestations" class="titleSection">
             <div class="positionTitleSection">
@@ -303,110 +236,6 @@
         </section>
 
     </main>
-
-    <main id="mainProjetPersonnel">
-
-        <div id="ProjetPersonnel" class="titleSection">
-            <div class="positionTitleSection">
-                <h3>Projets Personnels</h3>
-                <p>Voici quelques projets personnels</p>
-            </div>
-        </div>
-
-        <section class="containerCarouselProjetPersonnel">
-
-            <form class="file">
-                <section id="containerFileImg">
-                <div class="fileImg">
-                    <img src="img/logo-n/trash-n.png" alt="">
-                </div>
-                <div class="fileImg">
-                    <img src="img/logo-n/modification.png" alt="">
-                </div>
-            </section>
-            </form>
-
-            <form class="file">
-            <section id="containerInputFile">
-                <div class="containerImgInputFile">
-                    <div class="positionImgInputFile">
-                    <img src="img/logo-n/plus-n.png" alt="">
-                    <input class="inputFile" type="file">
-                </div>
-                </div>
-            </section>
-            </form>
-
-        </section>
-
-    </main>
-
-    <main id="mainContact">
-
-        <div id="contact" class="titleSection">
-            <div class="positionTitleSection">
-                <h3>Me contacter</h3>
-                <p>Parlons plus en detail de votre projet</p>
-            </div>
-        </div>
-
-        <form id="formContact">
-
-            <div class="identite">
-                <input id="contactInputNom" type="text" placeholder="Nom">
-                <input id="contactInputPrenom" type="text" placeholder="Prénom">
-            </div>
-
-            <input id="contactInputTel" type="tel" placeholder="Téléphone">
-            <input id="contactInputEmail" type="email" placeholder="E-mail">
-
-            <details>
-                <summary>prestation</summary>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-            </details>
-
-            <input id="contactInputMessage" type="text" placeholder="Message">
-            <input id="contactInputBtn" type="submit" value="Send" placeholder="Send">
-
-        </form>
-
-    </main>
-
-    <footer>
-
-        <section id="footerSectionLeft">
-            <div class="footerContainerSectionLeft">
-                <div class="containerFacebook">
-                    <a href=""><img id="facebook" src="../../img/logo-b/facebook-b.png" alt=""></a>
-                </div>
-                <div class="containerIntagram">
-                    <a href=""><img id="instagram" src="../../img/logo-b/instagram-b.png" alt=""></a>
-                </div>
-                <div class="containertiktok">
-                    <a href=""><img id="tiktok" src="../../img/logo-b/tiktok-b.png" alt=""></a>
-                </div>
-            </div>
-        </section>
-
-        <section id="footerSectionRight">
-            <div class="footerContainerSectionRight">
-                <div class="toggle" id="toggleDarkMode">
-                    <div class="positionCercleToggle">
-                        <div class="cercleToggle"></div>
-                    </div>
-                </div>
-                <div class="containerUser">
-                    <a href="admin.html"><img id="user" src="img/logo-b/utilisateur-2.png" alt=""></a>
-                </div>
-            </div>
-        </section>
-
-    </footer>
-
-    <script src="js/projet-personnel.js"></script>
-    <script src="js/theme.js"></script>
 
 </body>
 

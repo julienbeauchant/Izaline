@@ -1,0 +1,85 @@
+footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-color: #202020;
+}
+
+/* PARTIE GAUCHE DU FOOTER */
+
+/* moitié gauche du footer */
+#footerSectionLeft {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footerContainerSectionLeft {
+    width: 85%;
+    height: 100%;
+    gap: 7%;
+    display: flex;
+    align-items: center;
+}
+
+/* espace de positionnement des icon reseaux sociaux */
+.containerFacebook,
+.containerIntagram,
+.containertiktok {
+    width: clamp(25px, 6%, 40px);
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+}
+
+/* icon reseaux sociaux */
+#facebook,
+#instagram,
+#tiktok,
+#user {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+#facebook:hover,
+#instagram:hover,
+#tiktok:hover,
+#user:hover {
+    transform: scale(1.1);
+}
+
+/* PARTIE DROITE DU FOOTER */
+
+/* moitié droite du footer */
+#footerSectionRight {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footerContainerSectionRight {
+    width: 85%;
+    height: 100%;
+    gap: 7%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* espace de positionnement de l'icon user */
+.containerUser {
+    width: clamp(25px, 6%, 40px);
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* icon pour l'admin amenant a un panneau de connexion */
+/* #user {
+    width: 100%;
+    height: 100%;
+} */
