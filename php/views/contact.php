@@ -32,12 +32,12 @@
 <form id="formContact">
 
     <div class="identite">
-        <input id="contactInputNom" type="text" placeholder="Nom">
-        <input id="contactInputPrenom" type="text" placeholder="Prénom">
+        <input class="formContactInput" id="contactInputNom" type="text" placeholder="Nom">
+        <input class="formContactInput" id="contactInputPrenom" type="text" placeholder="Prénom">
     </div>
 
-    <input id="contactInputTel" type="tel" placeholder="Téléphone">
-    <input id="contactInputEmail" type="email" placeholder="E-mail">
+    <input class="formContactInput" id="contactInputTel" type="tel" placeholder="Téléphone">
+    <input class="formContactInput" id="contactInputEmail" type="email" placeholder="E-mail">
 
     <select>
         <option value="">choisir la prestation</option>

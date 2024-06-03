@@ -22,7 +22,7 @@
     }
 
     #navBurger {
-        display: flex;
+        display: none;
         z-index: 2;
     }
 

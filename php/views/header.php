@@ -73,7 +73,6 @@
 <section id="headerSectionRight"></section>
 
 <img id="robotHeader" src="../img/robot/friendly-robot.png" alt="">
-<img id="robotHeader2" src="../img/robot/happy-robot.png" alt="">
 </header>
 
 </body>

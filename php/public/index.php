@@ -34,23 +34,28 @@
 <body>
 
 <?php
-    require 'header.php';
+session_start();
+echo "Session admin: " . (isset($_SESSION['admin']) ? 'active' : 'inactive');
 ?>
 
 <?php
-    require 'prestation.php';
+    require '../views/header.php';
 ?>
 
 <?php
-    require 'projet-personnel.php';
+    require '../views/prestation.php';
 ?>
 
 <?php
-    require 'contact.php';
+    require '../views/projet-personnel.php';
 ?>
 
 <?php
-    require 'footer.php';
+    require '../views/contact.php';
+?>
+
+<?php
+    require '../views/footer.php';
 ?>
 
 <?php

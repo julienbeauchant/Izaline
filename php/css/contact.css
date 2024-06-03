@@ -52,10 +52,12 @@ textarea {
     font-weight: 300;
     padding-top: 20px;
     padding-left: 20px;
+    background-color: #F9F9F9;
+    border: 1px solid #202020;
     caret-color: #22C8DD;
 }
 
-input,
+.formContactInput,
 select {
     font-size: 1em;
     font-weight: 300;
@@ -73,6 +75,7 @@ select {
     font-weight: 500;
     color: #F9F9F9;
     background-color: #202020;
+    border: none;
 }
 
 select {
