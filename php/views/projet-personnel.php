@@ -49,7 +49,7 @@
 
                 </form>            
                 
-                <!-- <form class="file">
+                <form class="file">
 
                 <section id="containerFileImg">
 
@@ -69,11 +69,11 @@
 
                     <input id="inputNomProjetPersonnel" name="nom" type="text" >
                     <input id="inputImageProjetPersonnel" name="image" type="image" src="../img/coconut_..svg">
-                    <input id="inputUrlProjetPersonnel" name="url" type="button">
+                    <input id="inputUrlProjetPersonnel" name="url" type="url">
 
                 </section>
                 
-            </form> -->
+            </form>
 
         </section>
 

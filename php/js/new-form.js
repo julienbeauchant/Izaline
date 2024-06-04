@@ -1,13 +1,52 @@
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
+//     const plusIcon = document.querySelector('.inputFile'); // s'assurer que c'est bien la classe de votre bouton 'plus'
 
-    // Sélectionner le formulaire et ajouter un écouteur d'événement
-    document.getElementById('addProjectForm').addEventListener('click', function() {
-        // Créer le nouveau formulaire
-        const newForm = document.createElement('form');
-        newForm.classList.add('file');
-        
-        // Ajouter le contenu HTML au nouveau formulaire
-        newForm.innerHTML = `
+//     plusIcon.addEventListener('click', function() {
+//         const container = document.querySelector('.containerCarouselProjetPersonnel'); // ajuster si nécessaire
+//         const newFormHtml = `
+//             <form class="file">
+//                 <section id="containerFileImg">
+//                     <div class="fileImg">
+//                         <img src="../img/logo-n/trash-n.png" alt="">
+//                         <input id="inputTrashProjetPersonnel" name="trash" type="button">
+//                     </div>
+//                     <div class="fileImg">
+//                         <img src="../img/logo-n/modification.png" alt="">
+//                         <input id="inputModificationProjetPersonnel" name="modification" type="button">
+//                     </div>
+//                 </section>
+//                 <section id="containerImgInputFile">
+//                     <input id="inputNomProjetPersonnel" name="nom" type="text">
+//                     <input id="inputImageProjetPersonnel" name="image" type="image" src="" alt="">
+//                     <input id="inputUrlProjetPersonnel" name="url" type="button">
+//                 </section>
+//             </form>
+//         `;
+//         container.innerHTML += newFormHtml; // Ajoute le nouveau formulaire à la page
+//     });
+// });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const plusIcon = document.querySelector('.inputFile');
+
+    plusIcon.addEventListener('click', function() {
+        const popup = document.getElementById('popupForm');
+        popup.style.display = 'flex';
+    });
+});
+
+function closePopup() {
+    document.getElementById('popupForm').style.display = 'none';
+}
+
+function addProject() {
+    const projectName = document.getElementById('projectName').value;
+    const projectImage = document.getElementById('projectImage').value;
+    const projectUrl = document.getElementById('projectUrl').value;
+
+    const formContainer = document.querySelector('.containerCarouselProjetPersonnel');
+    const newFormHtml = `
+        <form class="file" action="add-project.php" method="POST">
             <section id="containerFileImg">
                 <div class="fileImg">
                     <img src="../img/logo-n/trash-n.png" alt="">
@@ -19,24 +58,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             </section>
             <section id="containerImgInputFile">
-                <input id="inputNomProjetPersonnel" name="nom" type="text">
-                <input id="inputImageProjetPersonnel" name="image" type="button">
-                <input id="inputUrlProjetPersonnel" name="url" type="button">
+                <input id="inputNomProjetPersonnel" name="nom" type="text" value="${projectName}">
+                <input id="inputImageProjetPersonnel" name="image" type="image" src="${projectImage}">
+                <input id="inputUrlProjetPersonnel" name="url" type="button" value="${projectUrl}">
             </section>
-        `;
-
-        // Ajouter le nouveau formulaire à la section contenant les projets personnels
-        document.querySelector('.containerCarouselProjetPersonnel').appendChild(newForm);
-        newForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-            const formData = new FormData(newForm);
-            fetch('../controllers/traitement-projet-personnel.php', {
-                method: 'POST',
-                body: formData
-            }).then(response => response.text()).then(data => {
-                console.log(data);
-                // Optionnel: Rafraîchir la page ou mettre à jour l'affichage des projets
-            }).catch(error => console.error('Error:', error));
-        });
-    });
-});
+        </form>
+    `;
+    formContainer.innerHTML += newFormHtml;
+    closePopup();
+}
