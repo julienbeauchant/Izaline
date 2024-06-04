@@ -36,7 +36,7 @@ try {
                 // Démarrer une session et enregistrer l'email de l'administrateur connecté
                 $_SESSION['admin'] = $user['email'];
                 // Rediriger l'utilisateur vers la page d'accueil ou une autre page
-                header("Location: ../public/index.php");
+                header("Location: ../../public/index.php");
                 // Arrêter l'exécution du script
                 exit();
             } else {

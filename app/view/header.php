@@ -4,15 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/global.css">
-
-    <link rel="stylesheet" href="../css/mediaqueries/mediaqueries-header.css">
-    <link rel="stylesheet" href="../css/mediaqueries/mediaqueries-global.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <title>header</title>
 </head>
@@ -28,7 +19,7 @@
         </div>
         <nav id="navBurger">
             <div class="containerImgBurger">
-                <img id="burger" src="../img/logo-n/menu-n.png" alt="">
+                <img id="burger" src="img/logo-n/menu-n.png" alt="">
             </div>
             <ul>
                 <li><a href="#mainPrestations">Prestations</a></li>
@@ -72,7 +63,7 @@
 
 <section id="headerSectionRight"></section>
 
-<img id="robotHeader" src="../img/robot/friendly-robot.png" alt="">
+<img id="robotHeader" src="img/robot/friendly-robot.png" alt="">
 </header>
 
 </body>

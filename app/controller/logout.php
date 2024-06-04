@@ -6,6 +6,6 @@ session_start();
 session_unset();
 session_destroy();
 echo "Déconnexion réussie. Vous serez redirigé vers la page de connexion.";
-header("Location: login.php");
+header("Location: ../view/login.php");
 exit();
 ?>
