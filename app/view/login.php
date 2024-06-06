@@ -18,9 +18,9 @@
 </head>
 
 <body>
-<?php
+<!-- <?php
 echo "Session admin: " . (isset($_SESSION['admin']) ? 'active' : 'inactive');
-?>
+?> -->
 
     <section id="containerAdmin">
 

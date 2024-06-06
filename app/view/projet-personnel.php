@@ -10,7 +10,7 @@
 
 <body>
 
-<main id="mainProjetPersonnel">
+    <main id="mainProjetPersonnel">
 
         <div id="ProjetPersonnel" class="titleSection">
             <div class="positionTitleSection">
@@ -23,49 +23,35 @@
 
 
 
-                <form class="file admin-only" id="addProjectForm" method="POST" action="../controllers/traitement-projet-personnel.php">
-
-                    <section id="containerInputFile">
-
-                        <div class="containerImgInputFile">
-
-                            <div class="positionImgInputFile">
-                                <img src="img/logo-n/plus-n.png" alt="">
-                                <input class="inputFile" type="button">
-                            </div>
-
+            <section id="add-project" class="admin-only">
+                <div id="containerBtnAddProject">
+                    <div class="cercleBtnAddProject">
+                        <div class="containerImgBtnAddProject">
+                            <img src="img/logo-n/plus-n.png" alt="">
                         </div>
-
-                    </section>
-
-                </form>            
-                
-                <!-- <form class="file">
-
-                <section id="containerFileImg">
-
-                    <div class="fileImg">
-                        <img src="img/logo-n/trash-n.png" alt="">
-                        <input id="inputTrashProjetPersonnel" name="trash" type="button">
                     </div>
+                </div>
+            </section>
 
-                    <div class="fileImg">
-                        <img src="img/logo-n/modification.png" alt="">
-                        <input id="inputModificationProjetPersonnel" name="modification" type="button" >
+            <?php
+            require 'modal.php'
+            ?>
+
+            <section class="project">
+                <div class="containerProjectIcon">
+                    <div class="projectIcon">
+                        <img class="projectIconTrash" src="img/logo-n/trash-n.png" alt="">
                     </div>
-
+                    <div class="projectIcon">
+                        <img class="projectIconModification" src="img/logo-n/modification.png" alt="">
+                    </div>
+                </div>
+                <section class="containerInfoProject">
+                    <p id="nameProject" name="nom" type="text" >
+                    <img id="imgProject" src="" alt="">
+                    <a href="" id="urlProject"></a>
                 </section>
-
-                <section id="containerImgInputFile">
-
-                    <input id="inputNomProjetPersonnel" name="nom" type="text" >
-                    <input id="inputImageProjetPersonnel" name="image" type="image" src="img/coconut_..svg" alt="">
-                    <input id="inputUrlProjetPersonnel" name="url" type="url">
-
-                </section>
-                
-            </form> -->
-
+            </section>
         </section>
 
     </main>
@@ -73,24 +59,9 @@
     <script>
         // Vérifier si l'utilisateur est connecté en tant qu'administrateur
         let isAdmin = <?php echo isset($_SESSION['admin']) ? 'true' : 'false'; ?>;
-        console.log(<?php echo isset($_SESSION['admin']) ? 'true' : 'false'; ?>);
-
-        // Sélectionner le formulaire d'ajout de projet
-        let form = document.querySelector('.admin-only');
-
-        // Masquer le formulaire pour les utilisateurs non administrateurs
-        if (!isAdmin) {
-            form.style.display = 'none';
-        };
-        console.log(isAdmin)
     </script>
 
-    <script src="js/new-form.js">
-        // Vérifier si l'utilisateur est connecté en tant qu'administrateur
-        let isAdmin = <?php echo isset($_SESSION['admin']) ? 'true' : 'false'; ?>;
-        console.log(isAdmin);
-        </script>
-
-        <script src="js/add-form.js"></script>
+    <script src="js/add-project.js"></script>
 </body>
+
 </html>

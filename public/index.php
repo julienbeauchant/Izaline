@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/projet-personnel.css">
     <link rel="stylesheet" href="css/retour-haut.css">
     <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/modal.css">
 
     <link rel="stylesheet" href="css/mediaqueries/mediaqueries-contact.css">
     <link rel="stylesheet" href="css/mediaqueries/mediaqueries-footer.css">
@@ -33,8 +34,32 @@
 
 <?php
 session_start();
-echo "Session admin: " . (isset($_SESSION['admin']) ? 'active' : 'inactive');
+$adminSessionActive = isset($_SESSION['admin']);
 ?>
+
+<?php if ($adminSessionActive): ?>
+        <div class="fixed-header">
+            <p>Vous êtes connecté</p>
+        </div>
+        <!-- endif, balise alternative pour mettre fin au if -->
+    <?php endif; ?>
+
+<style>
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #22C8DD;
+            color: white;
+            text-align: center;
+            z-index: 1000; /* Assurez-vous qu'il soit toujours au-dessus des autres éléments */
+        }
+    </style>
+
 
 <?php
     require '../app/view/header.php';
@@ -60,72 +85,21 @@ echo "Session admin: " . (isset($_SESSION['admin']) ? 'active' : 'inactive');
     require '../app/view/retour-haut.php';
 ?>
 
-<div id="popupForm" style="display:none;">
+<!-- <div id="popupForm" style="display:none;">
     <div class="test">
         <h2>Ajouter un Nouveau Projet</h2>
         <form id="newProjectForm">
             <input type="text" id="projectName" name="projectName" placeholder="Nom du projet"><br><br>
 
-            <input type="text" id="projectImage" name="projectImage" placeholder="Image du projet (URL"><br><br>
+            <input type="file" id="projectImage" name="projectImage" placeholder="Image du projet (URL)"><br><br>
 
-            <input type="text" id="projectUrl" name="projectUrl" placeholder="URL du projet"><br><br>
+            <input type="url" id="projectUrl" name="projectUrl" placeholder="URL du projet"><br><br>
 
             <button type="button" onclick="addProject()">Ajouter Projet</button>
             <button type="button" onclick="closePopup()">Fermer</button>
         </form>
     </div>
-</div>
-
-<style>
-    #popupForm {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.test {
-    width: clamp(340px, 30%, 700px);
-    height: 60%;
-    background: white;
-    padding: 20px; 
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.test h2{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#newProjectForm {
-    width: 90%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#newProjectForm input,
-#newProjectForm button{
-    width: 90%;
-    height: 10%;
-}
-</style>
+</div> -->
 
 </body>
 
