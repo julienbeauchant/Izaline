@@ -1,0 +1,10 @@
+{
+    "name": "julienbeauchant/izaline",
+    "description": "site web permettant à izaline de proposer ses services en tantt que développeuse web et web mobile, et de mettre ses travaux personnels",
+    "type": "library",
+    "license": "LGPL",
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

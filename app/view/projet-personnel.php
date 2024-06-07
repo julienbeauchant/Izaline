@@ -50,9 +50,46 @@
                         <img id="imgProject" src="" alt="">
                         <a href="" id="urlProject"></a>
                 </section>
-            </section> -->
-        </section>
+            </section>
+        </section> -->
     </main>
+    <script>
+document.getElementById('createNewProject').addEventListener('submit', function(event) {
+    event.preventDefault(); // Empêche le rechargement de la page
+
+    // Crée une nouvelle section pour le projet ajouté
+    let newProjectSection = document.createElement('section');
+    newProjectSection.classList.add('project');
+    // Ajoute le contenu de la section (vous pouvez personnaliser selon vos besoins)
+    newProjectSection.innerHTML = `
+        <div class="containerProjectIcon">
+            <div class="projectIcon">
+                <img class="projectIconTrash" src="img/logo-n/trash-n.png" alt="">
+            </div>
+            <div class="projectIcon">
+                <img class="projectIconModification" src="img/logo-n/modification.png" alt="">
+            </div>
+        </div>
+        <section class="containerInfoProject">
+            <p id="nameProject" name="nom" type="text"></p>
+            <img id="imgProject" src="" alt="">
+            <a href="" id="urlProject"></a>
+        </section>
+    `;
+
+    let addProjectSection = document.getElementById('add-project');
+    addProjectSection.parentNode.insertBefore(newProjectSection, addProjectSection.nextSibling);
+
+    // Ajoute un écouteur d'événements à l'icône de la corbeille
+    let trashIcon = newProjectSection.querySelector('.projectIconTrash');
+    trashIcon.addEventListener('click', function() {
+        // Supprime la section du projet
+        newProjectSection.remove();
+    });
+});
+
+
+</script>
     <script>
         // Vérifier si l'utilisateur est connecté en tant qu'administrateur
         let isAdmin = <?php echo isset($_SESSION['admin']) ? 'true' : 'false'; ?>;
