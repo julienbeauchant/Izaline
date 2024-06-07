@@ -23,21 +23,20 @@
 
 
 
-            <section id="add-project" class="admin-only">
-                <div id="containerBtnAddProject">
-                    <div class="cercleBtnAddProject">
-                        <div class="containerImgBtnAddProject">
-                            <img src="img/logo-n/plus-n.png" alt="">
+            <?php if (isset($_SESSION['admin'])) : ?>
+                <section id="add-project" class="admin-only">
+                    <div id="containerBtnAddProject">
+                        <div class="cercleBtnAddProject">
+                            <div class="containerImgBtnAddProject">
+                                <img src="img/logo-n/plus-n.png" alt="">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+                <?php require 'modal.php' ?>
+            <?php endif; ?>
 
-            <?php
-            require 'modal.php'
-            ?>
-
-            <section class="project">
+            <!-- <section class="project">
                 <div class="containerProjectIcon">
                     <div class="projectIcon">
                         <img class="projectIconTrash" src="img/logo-n/trash-n.png" alt="">
@@ -47,20 +46,17 @@
                     </div>
                 </div>
                 <section class="containerInfoProject">
-                    <p id="nameProject" name="nom" type="text" >
-                    <img id="imgProject" src="" alt="">
-                    <a href="" id="urlProject"></a>
+                    <p id="nameProject" name="nom" type="text">
+                        <img id="imgProject" src="" alt="">
+                        <a href="" id="urlProject"></a>
                 </section>
-            </section>
+            </section> -->
         </section>
-
     </main>
-
     <script>
         // Vérifier si l'utilisateur est connecté en tant qu'administrateur
         let isAdmin = <?php echo isset($_SESSION['admin']) ? 'true' : 'false'; ?>;
     </script>
-
     <script src="js/add-project.js"></script>
 </body>
 
