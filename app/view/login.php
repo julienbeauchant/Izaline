@@ -25,34 +25,35 @@ echo "Session admin: " . (isset($_SESSION['admin']) ? 'active' : 'inactive');
     <section id="containerAdmin">
 
         <form class="positionAdmin" method="POST" action="../controller/traitement-login.php">
-
             <h1 id="h1Admin">Sign in</h1>
             <p id="pTitleAdmin">Enter details below</p>
-
             <section id="containerInputAdmin">
-
-                <div class="inputAdmin">
+                <div class="inputAdmin <?php echo isset($_GET['error']) ? 'error' : ''; ?>">
                     <input type="email" name="email" id="name" placeholder="Enter your email" required>
                 </div>
-
-                <div class="inputAdmin">
+                <div class="inputAdmin <?php echo isset($_GET['error']) ? 'error' : ''; ?>">
                     <input type="password" name="password" id="password" placeholder="Password" required>
                 </div>
-
                 <div class="inputAdmin">
                     <input type="submit" name="submit" id="submit" value="Connexion">
                 </div>
-
             </section>
-
+            <?php if (isset($_GET['error'])): ?>
+            <p style="color: red;">
+                <?php
+                if ($_GET['error'] == 'incorrect_password') {
+                    echo "Mot de passe incorrect.";
+                } elseif ($_GET['error'] == 'user_not_found') {
+                    echo "Aucun utilisateur trouvé avec cet email.";
+                }
+                ?>
+            </p>
+        <?php endif; ?>
             <section id="pAdmin">
-
                 <div class="pAdminLeft">
                     <a href="../../public/index.php">retour au site</a>
                 </div>
-
             </section>
-            
         </form>
 
     </section>

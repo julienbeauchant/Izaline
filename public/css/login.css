@@ -62,6 +62,10 @@
     background-color: transparent;
 }
 
+.inputAdmin.error input {
+    border: 1.5px solid red !important; /* Bordure rouge en cas d'erreur */
+}
+
 ::placeholder {
     color: #202020;
 }

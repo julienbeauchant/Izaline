@@ -1,22 +1,15 @@
 <?php
 $serverName = "localhost";
-// serveur local
 $userName = "root";
-// administrateur par default ( racine )
 $password = "";
-// ajouter UTF8 ?
 
 try {
-    // essayer 
-    $bdd = new PDO("mysql: host=$serverName; dbname=connexion", $userName, $password);
-    // langague SQL : l'hote = localhost; nom data base = connexion
+    $bdd = new PDO("mysql: host=$serverName; dbname=connexion; charset=utf8", $userName, $password);
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    // error mode pour nous donner le type d'erreur en cas d'echec a la connexion 
-    echo "Connexion réussie à la BDD<br>";
+    // ERRMODE pour nous donner le type d'erreur en cas d'echec a la connexion 
 
-    // Données de l'administrateur, Vérifier si l'administrateur existe déjà
     $email = "julienbeauchant.pro@yahoo.com";
-    $hashedPassword = password_hash("1234", PASSWORD_BCRYPT); // Hasher le mot de passe        
+    $hashedPassword = password_hash("1234", PASSWORD_BCRYPT);     
     
     $stmt = $bdd->prepare("SELECT * FROM admin WHERE email = :email");
     $stmt->bindParam(':email', $email);
@@ -35,9 +28,9 @@ try {
     }
     
 } catch (PDOException $e) {
-    // attraper  (donner l'erreur dans la varibale e)
     echo "Echec de la connexion : " . $e->getMessage();
 }
+?>
 
 
 // ce fichier permet de se connecter a la BDD et de créer un administrateur avec un email et un password. 
