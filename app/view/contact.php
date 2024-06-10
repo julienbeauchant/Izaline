@@ -29,8 +29,8 @@
     <input class="formContactInput" id="contactInputTel" type="tel" name="contactInputTel" placeholder="Téléphone"required>
     <input class="formContactInput" id="contactInputEmail" type="email" name="contactInputEmail" placeholder="E-mail"required>
 
-    <select name="prestation">
-        <option value="">choisir la prestation</option>
+    <select name="prestation" value="prestation">
+        <option>choisir la prestation</option>
         <option>prestation 1</option>
         <option>prestation 2</option>
         <option>prestation 3</option>

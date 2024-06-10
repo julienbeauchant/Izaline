@@ -74,6 +74,7 @@
 
 .containerProjectIcon {
     position: absolute;
+    z-index: 3;
     width: 90%;
     height: 15%;
     display: flex;
@@ -124,9 +125,8 @@
 
 #imgProject{
     width: 100%;
-    height: 100%;
+    height: 80%;
     object-fit: contain;
-    background-color: transparent;
     border: none;
 }
 

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,6 +26,14 @@
     <link rel="stylesheet" href="css/mediaqueries/mediaqueries-header.css">
     <link rel="stylesheet" href="css/mediaqueries/mediaqueries-prestation.css">
     <link rel="stylesheet" href="css/mediaqueries/mediaqueries-projet-personnel.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+    <link rel="icon" href="img/favicon_io/favicon.ico">
+    <link rel="manifest" href="img/favicon_io/site.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,22 +96,6 @@ $adminSessionActive = isset($_SESSION['admin']);
 <?php
     require '../app/view/retour-haut.php';
 ?>
-
-<!-- <div id="popupForm" style="display:none;">
-    <div class="test">
-        <h2>Ajouter un Nouveau Projet</h2>
-        <form id="newProjectForm">
-            <input type="text" id="projectName" name="projectName" placeholder="Nom du projet"><br><br>
-
-            <input type="file" id="projectImage" name="projectImage" placeholder="Image du projet (URL)"><br><br>
-
-            <input type="url" id="projectUrl" name="projectUrl" placeholder="URL du projet"><br><br>
-
-            <button type="button" onclick="addProject()">Ajouter Projet</button>
-            <button type="button" onclick="closePopup()">Fermer</button>
-        </form>
-    </div>
-</div> -->
 
 </body>
 
