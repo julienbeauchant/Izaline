@@ -18,9 +18,9 @@
 </head>
 
 <body>
-<!-- <?php
-echo "Session admin: " . (isset($_SESSION['admin']) ? 'active' : 'inactive');
-?> -->
+    <!-- <?php
+            echo "Session admin: " . (isset($_SESSION['admin']) ? 'active' : 'inactive');
+            ?> -->
 
     <section id="containerAdmin">
 
@@ -38,17 +38,17 @@ echo "Session admin: " . (isset($_SESSION['admin']) ? 'active' : 'inactive');
                     <input type="submit" name="submit" id="submit" value="Connexion">
                 </div>
             </section>
-            <?php if (isset($_GET['error'])): ?>
-            <p style="color: red;">
-                <?php
-                if ($_GET['error'] == 'incorrect_password') {
-                    echo "Mot de passe incorrect.";
-                } elseif ($_GET['error'] == 'user_not_found') {
-                    echo "Aucun utilisateur trouvé avec cet email.";
-                }
-                ?>
-            </p>
-        <?php endif; ?>
+            <?php if (isset($_GET['error'])) : ?>
+                <p style="color: red;">
+                    <?php
+                    if ($_GET['error'] == 'incorrect_password') {
+                        echo "Mot de passe incorrect.";
+                    } elseif ($_GET['error'] == 'user_not_found') {
+                        echo "Aucun utilisateur trouvé avec cet email.";
+                    }
+                    ?>
+                </p>
+            <?php endif; ?>
             <section id="pAdmin">
                 <div class="pAdminLeft">
                     <a href="../../public/index.php">retour au site</a>
@@ -59,4 +59,5 @@ echo "Session admin: " . (isset($_SESSION['admin']) ? 'active' : 'inactive');
     </section>
 
 </body>
+
 </html>

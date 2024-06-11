@@ -1,14 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Sélectionner le bouton d'ajout de projet
-    let btnAddProject = document.querySelector('#containerBtnAddProject');
-    let modal = document.querySelector('#containerModal');
-    let closeModalBtn = document.querySelector('#closeModal');
-    let form = document.getElementById('createNewProject');
+    let btnModalUpdate = document.querySelectorAll('.projectIconModification');
+    let modal = document.querySelector('#containerModalUpdate');
+    let closeModalBtn = modal.querySelector('#closeModal');
+    let hidden = modal.querySelector('#hidden');
 
-    // Afficher le modal au clic sur le bouton d'ajout de projet
-    btnAddProject.addEventListener('click', function () {
-        console.log('Add project button clicked');
-        modal.style.display = 'flex';
+
+    btnModalUpdate.forEach(element => {
+        // Afficher le modal au clic sur le bouton d'ajout de projet
+        element.addEventListener('click', function () {
+            hidden.value = element.dataset.id
+            modal.style.display = 'flex';
+        });
     });
 
     // Masquer le modal au clic sur le bouton de fermeture

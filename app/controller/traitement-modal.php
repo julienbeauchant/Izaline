@@ -27,11 +27,6 @@ try {
         $url = htmlspecialchars($_POST['inputUrlModal']);
         $id_admin = $_SESSION['id_admin'];
 
-        echo "Nom : $nom<br>"; // Debug
-        echo "Image : $img<br>"; // Debug
-        echo "URL : $url<br>"; // Debug
-        echo "Admin ID : $id_admin<br>"; // Debug
-
         // Vérifier si les champs ne sont pas vides
         if (empty($nom) || empty($img) || empty($url)) {
             echo "Tous les champs sont requis.<br>";
