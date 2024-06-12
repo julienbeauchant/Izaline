@@ -91,6 +91,11 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    /* background-color: red; */
+}
+
+.containerRobotHeaderResponsive {
+    display: none;
 }
 
 #nav {
@@ -125,8 +130,4 @@ header {
     height: auto;
     top: 45%;
     right: 22%;
-}
-
-#robotHeader2 {
-    display: none;
 }

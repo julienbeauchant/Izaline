@@ -1,19 +1,18 @@
-@media screen and ( max-width: 987px) {
+@media screen and ( max-width: 999px) {
     #headerSectionLeft {
         width: 100%;
+    }
+
+    .containerLogoIzaline {
+        background-color: red;
     }
 
     #headerSectionRight {
         display: none;
     }
 
-    #ContainerCenterHeader {
-        width: 100%;
-        height: 85%;
+    .containerRobotHeaderResponsive {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     #nav {
@@ -54,84 +53,76 @@
     #robotHeader {
         display: none;
     }
-
-    #robotHeader2 {
-        position: absolute;
-        display: flex;
-        width: clamp(200px, 20%, 330px);
-        height: auto;
-        top: 70%;
-        right: 36%;
-    }
     
     .headerCenter {
         width: 80%;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
     }
 
     .containerH1 {
-        width: 100%;
-        height: 50%;
-        display: flex;
+        width: 80%;
+        height: 30%;
         justify-content: flex-start;
-        align-items: center;
     }
     
     .containerH2 {
-        width: 100%;
-        height: 50%;
-        display: flex;
+        width: 80%;
+        height: 30%;
         justify-content: flex-start;
+    }
+
+    .containerRobotHeaderResponsive {
+        width: 80%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
 
-    h1 {
-        font-size: 9vw;
+    #robotHeaderResponsive {
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
     }
 
+    h1 {
+        font-size: 6.8vw;
+    }
+    
+    h2 {
+        font-size: 2.2vw;
+    }
+}
+
+@media screen and ( max-width: 737px) {
+    .headerCenter {
+        width: 90%;
+    }
+    h1 {
+        font-size: 7.8vw;
+    }
+    
+    h2 {
+        font-size: 3vw;
+    }
+}
+
+@media screen and ( max-width: 560px) {
+    h1 {
+        font-size: 7.5vw;
+    }
+    
+    h2 {
+        font-size: 3vw;
+    }
+}
+
+@media screen and ( max-width: 424px) {
+    h1 {
+        font-size: 7vw;
+    }
+    
     h2 {
         font-size: 3.5vw;
-    }
-}
-
-@media screen and ( max-width: 730px) {
-
-    h1 {
-        font-size: 8.5vw;
-    }
-
-    h2 {
-        font-size: 4.5vw;
-    }
-
-}
-
-@media screen and ( max-width: 588px) {
-
-
-
-    h2 {
-        font-size: 4.5vw;
-    }
-}
-
-@media screen and ( max-width: 434px) {
-    h1 {
-        font-size: 8vw;
-    }
-
-    h2 {
-        font-size: 5vw;
-    }
-
-    .containerH1 {
-        height: 40%;
-    }
-    
-    .containerH2 {
-        height: 60%;
     }
 }

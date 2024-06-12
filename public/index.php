@@ -1,5 +1,6 @@
 <?php
 session_start();
+$adminSessionActive = isset($_SESSION['admin']);
 ?>
 
 <!DOCTYPE html>
@@ -27,12 +28,9 @@ session_start();
     <link rel="stylesheet" href="css/mediaqueries/mediaqueries-prestation.css">
     <link rel="stylesheet" href="css/mediaqueries/mediaqueries-projet-personnel.css">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/android-chrome-512x512.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
-    <link rel="icon" href="img/favicon_io/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="img/favicon_io/site.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,11 +41,6 @@ session_start();
 </head>
 
 <body>
-
-<?php
-session_start();
-$adminSessionActive = isset($_SESSION['admin']);
-?>
 
 <?php if ($adminSessionActive): ?>
         <div class="fixed-header">

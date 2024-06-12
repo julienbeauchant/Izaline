@@ -28,7 +28,7 @@
                 </div>
                 <div class="containerH2">
                     <h2>
-                        Je suis Izaline Dhalluin,<wbr>
+                        Je suis Izaline Dhalluin,
                         développeurse web et web mobile.
                         <br>
                         <br>
@@ -37,6 +37,9 @@
                         <strong>COLLABORONS</strong> !
                     </h2>
                 </div>
+                <figure class="containerRobotHeaderResponsive">
+                    <img id="robotHeaderResponsive" src="img/robot/friendly-robot.png" alt="">
+                </figure>
             </div>
             <nav id="nav">
                 <ul>
