@@ -3,25 +3,17 @@
         width: 100%;
     }
 
-    .containerLogoIzaline {
-        background-color: red;
-    }
-
     #headerSectionRight {
         display: none;
     }
 
-    .containerRobotHeaderResponsive {
-        display: flex;
-    }
-
-    #nav {
-        display: none;
-    }
-
     #navBurger {
-        display: none;
-        z-index: 2;
+        position: absolute;
+        z-index: 4;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
 
     #navBurger ul {
@@ -29,7 +21,7 @@
         top: 120px;
         width: 200px;
         height: 300px;
-        display: flex;
+        display: none;
         flex-direction: column;
         border: 2px solid #22C8DD;
         backdrop-filter: blur(15px);
@@ -50,27 +42,18 @@
         color: #202020;
     }
 
-    #robotHeader {
-        display: none;
-    }
-    
     .headerCenter {
         width: 80%;
+        height: 90%;
         justify-content: space-between;
     }
 
-    .containerH1 {
+    .containerH1,
+    .containerH2  {
         width: 80%;
         height: 30%;
-        justify-content: flex-start;
     }
     
-    .containerH2 {
-        width: 80%;
-        height: 30%;
-        justify-content: flex-start;
-    }
-
     .containerRobotHeaderResponsive {
         width: 80%;
         height: 40%;
@@ -85,6 +68,14 @@
         object-fit: contain;
     }
 
+    #nav {
+        display: none;
+    }
+
+    #robotHeader {
+        display: none;
+    }
+
     h1 {
         font-size: 6.8vw;
     }
@@ -97,13 +88,14 @@
 @media screen and ( max-width: 737px) {
     .headerCenter {
         width: 90%;
+        height: 90%;
     }
     h1 {
-        font-size: 7.8vw;
+        font-size: 7.5vw;
     }
     
     h2 {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 }
 

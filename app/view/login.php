@@ -18,24 +18,21 @@
 </head>
 
 <body>
-    <!-- <?php
-            echo "Session admin: " . (isset($_SESSION['admin']) ? 'active' : 'inactive');
-            ?> -->
 
     <section id="containerAdmin">
 
         <form class="positionAdmin" method="POST" action="../controller/traitement-login.php">
-            <h1 id="h1Admin">Sign in</h1>
-            <p id="pTitleAdmin">Enter details below</p>
+            <h1 id="h1Admin">Connexion</h1>
+            <p id="pTitleAdmin">Entrez les informations</p>
             <section id="containerInputAdmin">
                 <div class="inputAdmin <?php echo isset($_GET['error']) ? 'error' : ''; ?>">
-                    <input type="email" name="email" id="name" placeholder="Enter your email" required>
+                    <input type="email" name="email" id="name" placeholder="E-mail" required>
                 </div>
                 <div class="inputAdmin <?php echo isset($_GET['error']) ? 'error' : ''; ?>">
-                    <input type="password" name="password" id="password" placeholder="Password" required>
+                    <input type="password" name="password" id="password" placeholder="Mot de passe" required>
                 </div>
                 <div class="inputAdmin">
-                    <input type="submit" name="submit" id="submit" value="Connexion">
+                    <input type="submit" name="submit" id="submit" value="Se connecter">
                 </div>
             </section>
             <?php if (isset($_GET['error'])) : ?>
@@ -50,9 +47,7 @@
                 </p>
             <?php endif; ?>
             <section id="pAdmin">
-                <div class="pAdminLeft">
                     <a href="../../public/index.php">retour au site</a>
-                </div>
             </section>
         </form>
 

@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION['id_admin'])) {
-    echo "Non autorisé. Redirection vers l'index.";
+    echo "Non autorisé. Redirection vers l'index";
     header('Location: ../../public/index.php');
     exit();
 }
@@ -20,12 +20,12 @@ try {
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        echo "Formulaire soumis.<br>"; // Debug
+        echo "Formulaire soumis<br>"; // Debug
 
         // Récupérer les valeurs du formulaire
         $id_projets_personnels = htmlspecialchars($_POST['id_projets_personnels']);
         if (empty($id_projets_personnels)) {
-            echo "Tous les champs sont requis.<br>";
+            echo "Tous les champs sont requis<br>";
             exit();
         }
 

@@ -4,26 +4,25 @@
         <div class="containerLogoIzaline">
             <div class="positionLogoIzaline">
                 <p>Izaline Dhalluin</p>
+                <nav id="navBurger">
+                    <div class="containerImgBurger">
+                        <img id="burger" src="img/logo-n/menu-n.png" alt="">
+                    </div>
+                    <ul>
+                    <li><a href="#headerSectionLeft">accueil</a></li>
+                        <li><a href="#mainPrestations">Prestations</a></li>
+                        <li><a href="#mainProjetPersonnel">Projets personnels</a></li>
+                        <li><a href="#mainContact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav id="navBurger">
-                <div class="containerImgBurger">
-                    <img id="burger" src="img/logo-n/menu-n.png" alt="">
-                </div>
-                <ul>
-                    <li><a href="#mainPrestations">Prestations</a></li>
-                    <li><a href="#mainProjetPersonnel">Projets personnels</a></li>
-                    <li><a href="#mainContact">Contact</a></li>
-                </ul>
-            </nav>
         </div>
 
         <section id="ContainerCenterHeader">
             <div class="headerCenter">
                 <div class="containerH1">
                     <h1>
-                        Un projet de <span>site web</span>
-                        <br>
-                        et d'<span>application web</span> ?
+                        Un projet de <span>site web</span> et d'<span>application web</span> ?
                     </h1>
                 </div>
                 <div class="containerH2">
@@ -38,7 +37,7 @@
                     </h2>
                 </div>
                 <figure class="containerRobotHeaderResponsive">
-                    <img id="robotHeaderResponsive" src="img/robot/friendly-robot.png" alt="">
+                    <img id="robotHeaderResponsive" src="img/robot/happy-robot.png" alt="">
                 </figure>
             </div>
             <nav id="nav">
@@ -55,4 +54,5 @@
     <section id="headerSectionRight"></section>
 
     <img id="robotHeader" src="img/robot/friendly-robot.png" alt="">
+
 </header>

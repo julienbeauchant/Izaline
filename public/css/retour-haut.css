@@ -1,5 +1,6 @@
 #retourHaut {
     position: fixed;
+    z-index: 3;
     bottom: 30%;
     right: 10%;
     display: none;

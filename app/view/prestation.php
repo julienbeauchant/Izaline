@@ -7,16 +7,13 @@
         </div>
     </div>
 
-    <section id="vitrine" class="prestation">
+    <section id="prestation1" class="prestation">
 
         <div class="positionPrestationLeft">
-
             <div class="insidePrestation">
-
                 <div class="containerH4Vitrine">
                     <h4>Prestation 1</h4>
                 </div>
-
                 <div class="containerPVitrine">
                     <p>
                         La prestation 1 est la prestation basique.
@@ -25,7 +22,6 @@
                         <strong>prestation 1</strong> est faite pour vous !
                     </p>
                 </div>
-
                 <div class="insideVitrine2">
                     <div class="containerInsideVitrine2">
                         <div class="positionInsideVitrine2">
@@ -44,11 +40,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
         <div class="insideVitrine">
             <div class="containerInsideVitrine">
                 <div class="positionInsideVitrine">
@@ -68,24 +61,15 @@
             </div>
         </div>
 
-
-        <!-- <div class="containerRobotPrestation">
-                <img id="robotPrestationVitrine" src="../../img/robot-assistant/happy-robot-assistant.svg" alt="">
-            </div> -->
-
-
     </section>
 
-    <section id="interactive" class="prestation">
+    <section id="prestation2" class="prestation">
 
         <div class="positionPrestationLeft">
-
             <div class="insidePrestation">
-
                 <div class="containerH4Vitrine">
                     <h4>Prestation 2</h4>
                 </div>
-
                 <div class="containerPVitrine">
                     <p>
                         La prestation 2 est la prestation intermédiaire.
@@ -94,7 +78,6 @@
                             2</strong> est faite pour vous !
                     </p>
                 </div>
-
                 <div class="insideVitrine2">
                     <div class="containerInsideVitrine2">
                         <div class="positionInsideVitrine2">
@@ -113,11 +96,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
         <div class="insideVitrine">
             <div class="containerInsideVitrine">
                 <div class="positionInsideVitrine">
@@ -137,22 +117,15 @@
             </div>
         </div>
 
-        <!-- <div class="containerRobotPrestation">
-                <img id="robotPrestationInteractive" src="img/robot-assistant/friendly-robot-assistant.svg" alt="">
-            </div> -->
-
     </section>
 
-    <section id="vitrine" class="prestation">
+    <section id="prestation3" class="prestation">
 
         <div class="positionPrestationLeft">
-
             <div class="insidePrestation">
-
                 <div class="containerH4Vitrine">
                     <h4>Prestation 3</h4>
                 </div>
-
                 <div class="containerPVitrine">
                     <p>
                         La prestation 3 est la prestation complète.
@@ -161,7 +134,6 @@
                         le client alors la <strong>prestation 3</strong> est faite pour vous !
                     </p>
                 </div>
-
                 <div class="insideVitrine2">
                     <div class="containerInsideVitrine2">
                         <div class="positionInsideVitrine2">
@@ -180,9 +152,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
 
         <div class="insideVitrine">
@@ -203,13 +173,6 @@
                 </div>
             </div>
         </div>
-
-
-        <!-- <div class="containerRobotPrestation">
-                    <img id="robotPrestationComplete"
-                        src="../../img/robot-assistant/robot-assistant-standing-and-looking.svg" alt="">
-                </div> -->
-
         </div>
 
     </section>

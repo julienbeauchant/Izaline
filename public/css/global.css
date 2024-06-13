@@ -16,7 +16,6 @@ body {
     background-repeat: no-repeat;
     font-family: "Advent Pro", sans-serif;
     font-optical-sizing: auto;
-
 }
 
 span {
@@ -45,6 +44,10 @@ h4 {
 
 strong {
     color: #22C8DD;
+}
+
+input {
+    color: #202020;
 }
 
 /* Titre et sous-titre de chaque section */

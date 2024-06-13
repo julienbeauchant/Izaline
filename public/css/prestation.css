@@ -8,7 +8,6 @@
 }
 
 .prestation {
-    position: relative;
     width: 60%;
     min-width: 350px;
     height: 450px;
@@ -27,13 +26,6 @@
     align-items: center;
 }
 
-#interactive {
-    display: flex;
-    justify-content: flex-start;
-    background-color: #202020;
-    color: #F9F9F9;
-}
-
 .insidePrestation {
     width: 80%;
     height: 90%;
@@ -41,50 +33,49 @@
     flex-direction: column;
 }
 
-/* ------------------------------------------------------ */
-
-.containerH4Vitrine,
-.containerH4Complete {
+.containerH4Vitrine {
     width: 100%;
     height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: orchid; */
 }
 
-/* ------------------------------------------------------ */
-
-.containerPVitrine,
-.containerPInteractive,
-.containerPComplete {
+.containerPVitrine {
     width: 100%;
     height: 60%;
     display: flex;
     align-items: center;
-    /* background-color: green; */
 }
 
-/* ------------------------------------------------------ */
-
-.containerPVitrine p,
-.containerPInteractive p,
-.containerPComplete p {
-    font-size: 1.5em;
+.containerPVitrine p {
+    font-size: clamp(18px, 2vw, 25px);
     font-weight: 200;
 }
 
-/* ------------------------------------------------------ */
-
 .insideVitrine,
-.insideVitrine2,
-.insideInteractive,
-.insideComplete {
+.insideVitrine2 {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.insideVitrine ul,
+.insideVitrine2 ul {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 200;
+    overflow: auto;
+}
+
+.insideVitrine2 {
+    display: none;
 }
 
 .containerInsideVitrine,
@@ -107,12 +98,8 @@
     justify-content: space-between;
 }
 
-/* ------------------------------------------------------ */
-
 .positionInsideVitrine p,
-.positionInsideVitrine2 p,
-.insideInteractive p,
-.insideComplete p {
+.positionInsideVitrine2 p {
     width: 100%;
     height: 20%;
     display: flex;
@@ -121,44 +108,10 @@
     font-weight: 500;
 }
 
-/* ------------------------------------------------------ */
-
-#robotPrestationVitrine {
-    position: absolute;
-    width: 60px;
-    height: auto;
-    top: 5%;
-    left: 3%;
-}
-
-#robotPrestationInteractive,
-#robotPrestationComplete {
-    position: absolute;
-    width: 60px;
-    height: auto;
-    top: 5%;
-    left: 3%;
-    transform: scaleX(-1);
-}
-
-.insideVitrine ul,
-.insideVitrine2 ul,
-.insideInteractive ul,
-.insideComplete ul {
-    width: 100%;
-    height: 70%;
+#prestation2 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.5em;
-    font-weight: 200;
-    overflow: auto;
-}
-
-#interactive {
+    justify-content: flex-start;
     background-color: #202020;
+    color: #F9F9F9;
 }
 
-.insideVitrine2 {
-    display: none;
-}

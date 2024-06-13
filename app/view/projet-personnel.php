@@ -3,13 +3,16 @@ session_start();
 ?>
 
 <main id="mainProjetPersonnel">
+
     <div id="ProjetPersonnel" class="titleSection">
         <div class="positionTitleSection">
             <h3>Projets Personnels</h3>
             <p>Voici quelques projets personnels</p>
         </div>
     </div>
+
     <section class="containerCarouselProjetPersonnel">
+
         <?php if (isset($_SESSION['id_admin'])) : ?>
             <section id="add-project" class="admin-only">
                 <div id="containerBtnAddProject">
@@ -20,13 +23,13 @@ session_start();
                     </div>
                 </div>
             </section>
+
             <?php include '../app/view/modal.php'; ?>
             <?php include '../app/view/modal-update.php'; ?>
         <?php endif;
         require '../app/model/project.php';
-        foreach ($project as $newProject) {
+        foreach ($project as $newProject) { ?>
 
-        ?>
             <section class="project">
                 <div class="containerProjectIcon">
                     <?php if (isset($_SESSION['id_admin'])) : ?>
@@ -44,8 +47,8 @@ session_start();
                     <a href="<?php echo $newProject["url"] ?>" id="urlProject"></a>
                 </section>
             </section>
-        <?php }
-        ?>
+        <?php } ?>
 
     </section>
+
 </main>

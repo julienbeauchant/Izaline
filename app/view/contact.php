@@ -25,7 +25,7 @@
         </select>
         <input class="formContactInput" id="contactInputObjet" type="text" name="contactInputObjet" placeholder="Objet" required>
         <textarea id="contactInputMessage" type="text" name="contactInputMessage" placeholder="Message" required></textarea>
-        <input id="contactInputBtn" type="submit" name="contactInputBtn" value="Send" placeholder="Send">
+        <input id="contactInputBtn" type="submit" name="contactInputBtn" value="Envoyer">
 
     </form>
 
