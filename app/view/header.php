@@ -6,7 +6,7 @@
                 <p>Izaline Dhalluin</p>
                 <nav id="navBurger">
                     <div class="containerImgBurger">
-                        <img id="burger" src="img/logo-n/menu-n.png" alt="">
+                        <img id="burger" src="/public/img/logo-n/menu-n.png" alt="">
                     </div>
                     <ul>
                     <li><a href="#headerSectionLeft">accueil</a></li>
@@ -37,7 +37,7 @@
                     </h2>
                 </div>
                 <figure class="containerRobotHeaderResponsive">
-                    <img id="robotHeaderResponsive" src="img/robot/happy-robot.png" alt="">
+                    <img id="robotHeaderResponsive" src="/public/img/robot/happy-robot.png" alt="">
                 </figure>
             </div>
             <nav id="nav">
@@ -53,6 +53,8 @@
 
     <section id="headerSectionRight"></section>
 
-    <img id="robotHeader" src="img/robot/friendly-robot.png" alt="">
+    <img id="robotHeader" src="/public/img/robot/friendly-robot.png" alt="mascotte">
 
 </header>
+
+<script src="js/burger.js"></script>

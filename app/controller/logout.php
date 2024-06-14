@@ -1,11 +1,8 @@
-<!-- doit servir a se deconnecter de la session 
-de l'administrateur -->
-
 <?php
 session_start();
 session_unset();
 session_destroy();
-echo "Déconnexion réussie. Vous serez redirigé vers la page de connexion.";
+echo "Vous êtes deconnecté";
 header("Location: ../view/login.php");
 exit();
 ?>

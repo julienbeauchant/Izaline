@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -8,13 +8,11 @@
     <link rel="stylesheet" href="../../public/css/global.css">
     <link rel="stylesheet" href="../../public/css/login.css">
 
-    <link rel="stylesheet" href="../../public/css/mediaqueries/mediaqueries-login.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <title>sign in</title>
+    <title>Connexion</title>
 </head>
 
 <body>
@@ -39,15 +37,15 @@
                 <p style="color: red;">
                     <?php
                     if ($_GET['error'] == 'incorrect_password') {
-                        echo "Mot de passe incorrect.";
+                        echo "Mot de passe incorrect";
                     } elseif ($_GET['error'] == 'user_not_found') {
-                        echo "Aucun utilisateur trouvé avec cet email.";
+                        echo "Aucun utilisateur trouvé avec cet email";
                     }
                     ?>
                 </p>
             <?php endif; ?>
             <section id="pAdmin">
-                    <a href="../../public/index.php">retour au site</a>
+                <a href="../../public/index.php">retour au site</a>
             </section>
         </form>
 

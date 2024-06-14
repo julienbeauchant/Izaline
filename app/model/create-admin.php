@@ -6,7 +6,6 @@ $password = "";
 try {
     $bdd = new PDO("mysql: host=$serverName; dbname=connexion; charset=utf8", $userName, $password);
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    // ERRMODE pour nous donner le type d'erreur en cas d'echec a la connexion 
 
     $email = "julienbeauchant.pro@yahoo.com";
     $hashedPassword = password_hash("1234", PASSWORD_BCRYPT);     
@@ -15,16 +14,14 @@ try {
     $stmt->bindParam(':email', $email);
     $stmt->execute();
 
-    // Préparer et exécuter la requête d'insertion
     if ($stmt->rowCount() == 0) {
-        // Insérer les données de l'administrateur si elles n'existent pas
         $stmt = $bdd->prepare("INSERT INTO admin (email, password) VALUES (:email, :password)");
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':password', $hashedPassword);
         $stmt->execute();
-        echo "Administrateur créé avec succès.";
+        echo "Administrateur ajouté";
     } else {
-        echo "L'administrateur existe déjà.";
+        echo "L'administrateur existe déjà";
     }
     
 } catch (PDOException $e) {

@@ -16,34 +16,34 @@ session_start();
         <?php if (isset($_SESSION['id_admin'])) : ?>
             <section id="add-project" class="admin-only">
                 <div id="containerBtnAddProject">
-                    <div class="cercleBtnAddProject">
+                    <div class="cercleBtnAddProject" title="ajouter un projet">
                         <div class="containerImgBtnAddProject">
-                            <img src="img/logo-n/plus-n.png" alt="">
+                            <img id="plus" src="/public/img/logo-n/plus-n.png" alt="">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <?php include '../app/view/modal.php'; ?>
-            <?php include '../app/view/modal-update.php'; ?>
+            <?php require '/app/view/modal.php'; ?>
+            <?php require '/app/view/modal-update.php'; ?>
         <?php endif;
-        require '../app/model/project.php';
+        require '/app/model/project.php';
         foreach ($project as $newProject) { ?>
 
             <section class="project">
                 <div class="containerProjectIcon">
                     <?php if (isset($_SESSION['id_admin'])) : ?>
                         <div class="projectIcon">
-                            <a href="../app/model/delete.php?id_projets_personnels=<?php echo $newProject["id_projets_personnels"] ?>"><img class="projectIconTrash" src="img/logo-n/trash-n.png" alt=""></a>
+                            <a href="../app/model/delete.php?id_projets_personnels=<?php echo $newProject["id_projets_personnels"] ?>"><img class="projectIconTrash" src="/public/img/logo-n/trash-n.png" alt="" title="supprimer"></a>
                         </div>
                         <div class="projectIcon">
-                            <img class="projectIconModification" src="img/logo-n/modification.png" data-id="<?php echo $newProject["id_projets_personnels"] ?>" alt="">
+                            <img class="projectIconModification" src="/public/img/logo-n/modification.png" data-id="<?php echo $newProject["id_projets_personnels"] ?>" alt="" title="modifier">
                         </div>
                     <?php endif; ?>
                 </div>
                 <section class="containerInfoProject">
                     <p id="nameProject"></p>
-                    <img id="imgProject" src="img/img-project/<?php echo $newProject["img"] ?>" alt="">
+                    <img id="imgProject" src="/public/img/img-project/<?php echo $newProject["img"] ?>" alt="">
                     <a href="<?php echo $newProject["url"] ?>" id="urlProject"></a>
                 </section>
             </section>

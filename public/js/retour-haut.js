@@ -1,28 +1,14 @@
-        // Fonction pour vérifier si on est en bas de la page
-        function checkScroll() {
-            let scrollToTopBtn = document.getElementById('retourHaut');
-            let scrollTop = window.scrollY || document.documentElement.scrollTop;
-            let windowHeight = window.innerHeight;
-            let docHeight = document.documentElement.scrollHeight;
+document.addEventListener('DOMContentLoaded', () => {
+    const boutonRetourHaut = document.getElementById('retourHaut');
 
-            // Vérifiez si l'utilisateur est en bas de la page
-            if (windowHeight + scrollTop >= docHeight) {
-                scrollToTopBtn.style.display = 'flex';
-            } else {
-                scrollToTopBtn.style.display = 'none';
-            }
-        }
+    const verifierDefilement = () => {
+        boutonRetourHaut.style.display = (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight) ? 'flex' : 'none';
+    };
 
-        // Ajouter un écouteur d'événements pour le défilement
-        window.addEventListener('scroll', checkScroll);
+    window.addEventListener('scroll', verifierDefilement);
+    window.addEventListener('load', verifierDefilement);
 
-        // Ajouter un écouteur d'événements pour le clic sur le bouton
-        document.getElementById('retourHaut').addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Vérifiez la position de défilement lors du chargement de la page
-        window.addEventListener('load', checkScroll);
+    boutonRetourHaut.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});

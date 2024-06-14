@@ -74,8 +74,8 @@
                     <p>
                         La prestation 2 est la prestation intermédiaire.
                         <br>
-                        Si vous souhaitez une site web avec intéractions visuelles alors la <strong>prestation
-                            2</strong> est faite pour vous !
+                        Si vous souhaitez une site web avec intéractions visuelles alors la <strong>prestation 2</strong> 
+                        est faite pour vous !
                     </p>
                 </div>
                 <div class="insideVitrine2">
