@@ -42,27 +42,27 @@ $adminSessionActive = isset($_SESSION['admin']);
 <body>
 
     <?php
-    require '/app/view/header.php';
+    require '../app/view/header.php';
     ?>
 
     <?php
-    require '/app/view/prestation.php';
+    require '../app/view/prestation.php';
     ?>
 
     <?php
-    require '/app/view/projet-personnel.php';
+    require '../app/view/projet-personnel.php';
     ?>
 
     <?php
-    require '/app/view/contact.php';
+    require '../app/view/contact.php';
     ?>
 
     <?php
-    require '/app/view/footer.php';
+    require '../app/view/footer.php';
     ?>
 
     <?php
-    require '/app/view/retour-haut.php';
+    require '../app/view/retour-haut.php';
     ?>
 
 </body>
