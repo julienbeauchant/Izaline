@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-$serverName = "mysql";
+$serverName = "localhost";
 $userName = "root";
-$password = "root";
+$password = "";
 $dbName = "connexion";
 
 try {
