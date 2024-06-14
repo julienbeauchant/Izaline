@@ -19,9 +19,7 @@
     </FilesMatch>
 </IfModule>
 
-RewriteEngine On
-RewriteCond %{REQUEST_URI}  !(\.png|\.jpg|\.webp|\.gif|\.jpeg|\.zip|\.css|\.svg|\.js|\.pdf)$
-RewriteRule (.*) public/index.php [QSA,L]
+
 
 
 
