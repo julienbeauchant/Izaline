@@ -4,12 +4,12 @@ session_start();
 
 <main id="mainProjetPersonnel">
 
-    <div id="ProjetPersonnel" class="titleSection">
+    <section id="ProjetPersonnel" class="titleSection">
         <div class="positionTitleSection">
             <h3>Projets Personnels</h3>
             <p>Voici quelques projets personnels</p>
         </div>
-    </div>
+    </section>
 
     <section class="containerCarouselProjetPersonnel">
 
@@ -24,8 +24,8 @@ session_start();
                 </div>
             </section>
 
-            <?php include '../app/view/modal.php'; ?>
-            <?php include '../app/view/modal-update.php'; ?>
+            <?php require '../app/view/modal.php'; ?>
+            <?php require '../app/view/modal-update.php'; ?>
         <?php endif;
         require '../app/model/project.php';
         foreach ($project as $newProject) { ?>

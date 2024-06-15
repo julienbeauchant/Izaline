@@ -1,11 +1,11 @@
 <main id="mainContact">
 
-    <div id="contact" class="titleSection">
+    <section id="contact" class="titleSection">
         <div class="positionTitleSection">
             <h3>Me contacter</h3>
             <p>Parlons plus en detail de votre projet</p>
         </div>
-    </div>
+    </section>
     
     <form id="formContact" method="POST" action="../app/controller/traitement-contact.php">
         <div class="identite">

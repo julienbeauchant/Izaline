@@ -1,18 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    let btnAddProject = document.querySelector('#containerBtnAddProject');
-    let modal = document.querySelector('#containerModal');
-    let closeModalBtn = document.querySelector('#closeModal');
-    let form = document.getElementById('createNewProject');
+    let containerBtnAddProject = document.querySelector('#containerBtnAddProject');
+    let containerModal = document.querySelector('#containerModal');
+    let closeModal = document.querySelector('#closeModal');
 
-    btnAddProject.addEventListener('click', function () {
-        console.log('Add project button clicked');
-        modal.style.display = 'flex';
+    containerBtnAddProject.addEventListener('click', function () {
+        console.log('containerBtnAddProject cliqué');
+        containerModal.style.display = 'flex';
     });
 
-    closeModalBtn.addEventListener('click', function () {
-        console.log('Close modal button clicked');
-        modal.style.display = 'none';
+    closeModal.addEventListener('click', function () {
+        console.log('closeModal cliqué');
+        containerModal.style.display = 'none';
     });
     
 });

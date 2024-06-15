@@ -22,8 +22,8 @@
         width: 200px;
         height: 300px;
         display: none;
-        justify-content: space-between;
         flex-direction: column;
+        justify-content: space-between;
         font-size: 20px;
         font-weight: 500;
     }

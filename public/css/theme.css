@@ -42,9 +42,7 @@ body.dark-mode {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.dark-mode 
-.positionCercleToggle 
-.cercleToggle {
+.dark-mode .positionCercleToggle .cercleToggle {
     transform: translateX(180%);
 }
 
@@ -56,7 +54,8 @@ body.dark-mode {
 }
 
 .dark-mode #prestation1,
-.dark-mode #prestation3 {
+.dark-mode #prestation3,
+.dark-mode #navBurger ul li {
     border: 1px solid #F9F9F9;
 }
 
@@ -73,10 +72,18 @@ body.dark-mode {
 }
 
 .dark-mode #nav ul li a,
+.dark-mode #navBurger ul li a,
 .dark-mode ::placeholder  {
     color: #F9F9F9;
 }
 
 .dark-mode .cercleBtnAddProject {
     background-color: #202020;
+}
+
+.dark-mode .modal H2,
+.dark-mode #createNewProject input,
+.dark-mode #createNewProject ::placeholder,
+.dark-mode #createNewProject [value] {
+    color: #202020;
 }

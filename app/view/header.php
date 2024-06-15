@@ -37,7 +37,7 @@
                     </h2>
                 </div>
                 <figure class="containerRobotHeaderResponsive">
-                    <img id="robotHeaderResponsive" src="img/robot/happy-robot.png" alt="">
+                    <img id="robotHeaderResponsive" src="img/robot/happy-robot.png" alt="mascotte">
                 </figure>
             </div>
             <nav id="nav">

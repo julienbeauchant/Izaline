@@ -1,11 +1,11 @@
 <main id="mainPrestations">
 
-    <div id="prestations" class="titleSection">
+    <section id="prestations" class="titleSection">
         <div class="positionTitleSection">
             <h3>Prestations</h3>
             <p>Voici quelques propositions de prestations</p>
         </div>
-    </div>
+    </section>
 
     <section id="prestation1" class="prestation">
 
