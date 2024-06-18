@@ -63,7 +63,13 @@
 }
 
 .inputAdmin.error input {
-    border: 1.5px solid red !important; /* Bordure rouge en cas d'erreur */
+    /* Bordure rouge en cas d'erreur */
+    border: 1.5px solid red !important;
+}
+
+.inputAdmin.error ::placeholder {
+    /* texte rouge en cas d'erreur */
+    color: red !important;
 }
 
 ::placeholder {

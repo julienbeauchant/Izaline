@@ -23,6 +23,7 @@
             <h1 id="h1Admin">Connexion</h1>
             <p id="pTitleAdmin">Entrez les informations</p>
             <section id="containerInputAdmin">
+                <!-- ajoute la classe error, bordures rouges si l'email ou le mot de passe sont faux -->
                 <div class="inputAdmin <?php echo isset($_GET['error']) ? 'error' : ''; ?>">
                     <input type="email" name="email" id="name" placeholder="E-mail" required>
                 </div>
@@ -33,17 +34,7 @@
                     <input type="submit" name="submit" id="submit" value="Se connecter">
                 </div>
             </section>
-            <?php if (isset($_GET['error'])) : ?>
-                <p style="color: red;">
-                    <?php
-                    if ($_GET['error'] == 'incorrect_password') {
-                        echo "Mot de passe incorrect";
-                    } elseif ($_GET['error'] == 'user_not_found') {
-                        echo "Aucun utilisateur trouvé avec cet email";
-                    }
-                    ?>
-                </p>
-            <?php endif; ?>
+
             <section id="pAdmin">
                 <a href="../../public/index.php">retour au site</a>
             </section>

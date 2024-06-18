@@ -4,36 +4,42 @@ $userName = "root";
 $password = "";
 
 try {
+    // connexion PDO à la base de données
     $bdd = new PDO("mysql: host=$serverName; dbname=connexion; charset=utf8", $userName, $password);
+    // exceptions PDO en cas d'erreur
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+    // adresse email de l'administrateur à ajouter
     $email = "julienbeauchant.pro@yahoo.com";
+     // hachage du mot de passe
     $hashedPassword = password_hash("1234", PASSWORD_BCRYPT);     
     
-    $stmt = $bdd->prepare("SELECT * FROM admin WHERE email = :email");
-    $stmt->bindParam(':email', $email);
-    $stmt->execute();
+     // requête SQL pour sélectionner un utilisateur avec l'email
+    $sql = $bdd->prepare("SELECT * FROM admin WHERE email = :email");
+     // lie la valeur de l'email à la requête préparée
+    $sql->bindParam(':email', $email);
+       // exécute la requête
+    $sql->execute();
 
-    if ($stmt->rowCount() == 0) {
-        $stmt = $bdd->prepare("INSERT INTO admin (email, password) VALUES (:email, :password)");
-        $stmt->bindParam(':email', $email);
-        $stmt->bindParam(':password', $hashedPassword);
-        $stmt->execute();
+     // vérifie si une ligne a été trouvée, si l'utilisateur existe déjà
+    if ($sql->rowCount() == 0) {
+         // si l'utilisateur n'existe pas, requête SQL pour insérer un nouvel administrateur
+        $sql = $bdd->prepare("INSERT INTO admin (email, password) VALUES (:email, :password)");
+        // lie les valeurs des paramètres à la requête préparée
+        $sql->bindParam(':email', $email);
+        $sql->bindParam(':password', $hashedPassword);
+         // exécute la requête
+        $sql->execute();
+         // affiche un message si l'administrateur a été ajouté
         echo "Administrateur ajouté";
     } else {
+         // si l'utilisateur existe déjà, affiche un message
         echo "L'administrateur existe déjà";
     }
     
 } catch (PDOException $e) {
+     // Affiche un message d'erreur en cas d'exception PDO
     echo "Echec de la connexion : " . $e->getMessage();
 }
 ?>
-
-
-// ce fichier permet de se connecter a la BDD et de créer un administrateur avec un email et un password. 
-// pour ne pas avoir de soucis au niveau de la BDD et eviter qu'a chaque fois un administrateur soit créer,
-// un systeme permet de verifier si l'administrateur ayant cette email et ce password existe deja et si c la cas 
-// alors il n'y a pas d'ajout de nouvel administrateur 
-// l'utilisation de password_hash permet dans la BDD de hasher le password pour ne pas le reveler ( utiliser le password_verify ? )
-// bindParam permet d'eviter les injections SQL ( ne pas oubliere htmlSpecialChart )
 
